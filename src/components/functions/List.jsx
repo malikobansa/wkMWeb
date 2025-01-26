@@ -5,9 +5,9 @@ const List = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="ml-20" onChange={toggleTheme}>
+    <div className="ml-4" onChange={toggleTheme}>
       <ul
-        className={`flex flex-row justify-between gap-20 ${
+        className={`flex flex-col items-start gap-4 md:flex md:flex-row md:items-center md:gap-8 ${
           theme === "dark" ? "text-white" : "text-black"
         }`}
       >
