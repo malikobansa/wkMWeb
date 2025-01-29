@@ -18,8 +18,6 @@ const Layout = () => {
       <div>
         <Navbar />
         <Outlet />
-        {/* Pass the popularItems to SideBar */}
-        <SideBar items={popularItems} />
         <Footer />
       </div>
     </ThemeProvider>

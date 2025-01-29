@@ -1,6 +1,5 @@
 import Sidebar from "../functions/SideBar";
 import News from "../functions/News";
-import Swipe from "../functions/Swipe";
 import Lists from "../functions/Lists";
 
 const Mains = () => {
@@ -19,7 +18,6 @@ const Mains = () => {
   
           {/* Hero Content */}
           <News />
-          <Swipe/>
           <Lists/>
         </div>
       </div>

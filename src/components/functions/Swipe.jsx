@@ -1,15 +1,13 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Swipe = () => {
+const Swipe = ({ direction, onClick }) => {
   return (
-    <div className="flex flex-col w-6 h-full -mx-[-200px]">
-      <div className="bg-gray-400 flex h-48 items-center justify-center border-b-2 border-b-white">
-        <ChevronLeft color="#ffffff" />
-      </div>
-      <div className="bg-gray-400 flex h-48 items-center justify-center">
-        <ChevronRight color="#ffffff" />
-      </div>
-    </div>
+    <button
+      className="bg-gray-400 flex h-48 w-10 items-center justify-center border-b-2 border-white"
+      onClick={onClick}
+    >
+      {direction === "left" ? <ChevronLeft color="#ffffff" /> : <ChevronRight color="#ffffff" />}
+    </button>
   );
 };
 

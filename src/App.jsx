@@ -13,7 +13,7 @@ const App = () => {
         innerScale={0.7}
         outerScale={1.5}
         outerStyle={{ border: "3px solid black" }}
-        innerStyle={{ backgroundColor: "white" }}
+        innerStyle={{ backgroundColor: "black" }}
       />
       
       {/* Main Layout */}
