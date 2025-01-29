@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png';
 import Switcher from '../../components/functions/Switcher.jsx';
 import List from '../functions/List.jsx';
 import { Menu, X } from 'lucide-react'; // Hamburger and close icons
+import Mains from '../pages/Mains.jsx';
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext); // Destructure theme from context
@@ -14,8 +15,9 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <nav
-      className={`ml-24 p-4 flex items-center justify-between transition-colors duration-500 ${
+      className={`p-4 flex items-center justify-between transition-colors duration-500 ${
         theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'
       }`}
     >
@@ -47,6 +49,9 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    
+    <Mains/>
+    </>
   );
 };
 
